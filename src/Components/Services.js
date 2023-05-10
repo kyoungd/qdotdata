@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ServiceModal from './ServiceModal';
 // import icon1 from '../assets/img/icon/1.png'
-import icon2 from '../assets/img/icon/2.png'
-import icon4 from '../assets/img/icon/4.png'
+// import icon2 from '../assets/img/icon/2.png'
+// import icon4 from '../assets/img/icon/4.png'
 import { BsCupHot, BsSpeedometer2, BsTsunami } from "react-icons/bs";
 
 const Services = () => {
