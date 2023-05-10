@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MobileMenu from './MobileMenu';
-import ModalVideo from 'react-modal-video';
 import { Link } from "react-scroll";
+// import ModalVideo from 'react-modal-video';
 // import logoIcon from '../assets/img/logo-icon.png'
 import logoIcon from '../assets/img/ll.webp'
 
 const Header = () => {
-    const [isOpen, setOpen] = useState(false)
+    // const [isOpen, setOpen] = useState(false)
     return (
         <>
             <MobileMenu />
@@ -57,7 +57,7 @@ const Header = () => {
                     </div>
 
                     <div className="video">
-                        <ModalVideo channel='youtube'
+                        {/* <ModalVideo channel='youtube'
                             autoplay
                             isOpen={isOpen}
                             videoId="z7aqJpKfPC0"
@@ -65,7 +65,7 @@ const Header = () => {
                         <Link onClick={() => setOpen(true)}
                             className="popup-youtube video-play-button theme">
                             <i className="ri-play-line"></i>
-                        </Link>
+                        </Link> */}
                     </div>
 
                 </div>

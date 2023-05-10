@@ -14,6 +14,7 @@ import Footer from '../Components/Footer';
 // import Pricing from '../Components/Pricing';
 // import Brands from '../Components/Brands';
 // import Testimonial from '../Components/Testimonial';
+import AiWidget from '../Components/AiWidget';
 
 const Home = () => {
     return (
@@ -32,6 +33,7 @@ const Home = () => {
             <Blog />
             <Contact />
             <Footer />
+            <AiWidget />
         </div>
     );
 };
