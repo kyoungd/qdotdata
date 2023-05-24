@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const AiWidget = () => {
   const baseUrl = 'https://2human.ai';
-  const aiName = 'penny';
+  const aiName = 'amy';
   const templateName = 'timdplr-gmail-com';
   const isLeft = true;
 
@@ -14,11 +14,8 @@ const AiWidget = () => {
   const containerStyle = {
     position: 'fixed',
     zIndex: '1000',
-    left: visible ? (isLeft ? '10px' : 'auto') : '-10000px',
-    right: visible ? (isLeft ? 'auto' : '10px') : 'auto',
-    top: visible ? '20px' : '-10000px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     transition: 'left 0.3s, right 0.3s, top 0.3s',
+    boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)', // Added drop shadow
   };
 
   const buttonStyle = {
@@ -38,6 +35,36 @@ const AiWidget = () => {
     width: '60%',
     height: 'auto',
     transition: 'transform 0.3s',
+    border: '1px solid #ddd', // Light border
+    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.15)', // Light drop shadow
+    padding: '5px', // Add some space around the image for the border and shadow
+    borderRadius: '5px', // Optional: round corners for the border and shadow
+  };
+
+  const buttonRef = useRef();
+  const containerRef = useRef();
+
+  const updateContainerPosition = () => {
+    if (visible) {
+      const buttonRect = buttonRef.current.getBoundingClientRect();
+      const containerRect = containerRef.current.getBoundingClientRect();
+      
+      let left, right, top;
+
+      if (isLeft) {
+        left = Math.min(window.innerWidth - containerRect.width, buttonRect.left);
+        right = 'auto';
+      } else {
+        left = 'auto';
+        right = Math.min(window.innerWidth - containerRect.width, window.innerWidth - buttonRect.right);
+      }
+
+      top = Math.max(0, buttonRect.top - containerRect.height);
+
+      containerRef.current.style.left = `${left}px`;
+      containerRef.current.style.right = `${right}px`;
+      containerRef.current.style.top = `${top}px`;
+    }
   };
 
   useEffect(() => {
@@ -47,12 +74,21 @@ const AiWidget = () => {
     }
   }, [baseUrl, aiName, templateName]);
 
+  useEffect(() => {
+    updateContainerPosition();
+  }, [visible, isLeft]);
+
+  useEffect(() => {
+    window.addEventListener('resize', updateContainerPosition);
+
+    return () => {
+      window.removeEventListener('resize', updateContainerPosition);
+    };
+  }, [visible]);
+
   return (
     <>
-      <div style={containerStyle}>
-        <div>
-          <h3>AI {aiName}</h3>
-        </div>
+      <div style={containerStyle} ref={containerRef}>
         <iframe id='your-app-iframe' 
           style={{ width: '600px', height: `${window.innerHeight * 0.5}px`, border: 'none' }}
           title="AI Widget"
@@ -63,10 +99,11 @@ const AiWidget = () => {
         onClick={toggleVisibility}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
+        ref={buttonRef}
       >
         <img
           style={imgStyle}
-          src={ visible ?`${baseUrl}/images/icon-animation/icon-9.png` : `${baseUrl}/images/icon-animation/icon-7.png`}
+          src={ visible ?`${baseUrl}/images/icon-animation/icon-1.png` : `${baseUrl}/images/icon-animation/icon-2.png`}
           alt="Open AI"
         />
       </button>
