@@ -44,29 +44,6 @@ const AiWidget = () => {
   const buttonRef = useRef();
   const containerRef = useRef();
 
-  const updateContainerPosition = () => {
-    if (visible) {
-      const buttonRect = buttonRef.current.getBoundingClientRect();
-      const containerRect = containerRef.current.getBoundingClientRect();
-      
-      let left, right, top;
-
-      if (isLeft) {
-        left = Math.min(window.innerWidth - containerRect.width, buttonRect.left);
-        right = 'auto';
-      } else {
-        left = 'auto';
-        right = Math.min(window.innerWidth - containerRect.width, window.innerWidth - buttonRect.right);
-      }
-
-      top = Math.max(0, buttonRect.top - containerRect.height);
-
-      containerRef.current.style.left = `${left}px`;
-      containerRef.current.style.right = `${right}px`;
-      containerRef.current.style.top = `${top}px`;
-    }
-  };
-
   useEffect(() => {
     const iframe = document.getElementById('your-app-iframe');
     if (iframe) {
@@ -75,16 +52,36 @@ const AiWidget = () => {
   }, [baseUrl, aiName, templateName]);
 
   useEffect(() => {
-    updateContainerPosition();
-  }, [visible, isLeft]);
-
-  useEffect(() => {
-    window.addEventListener('resize', updateContainerPosition);
-
+    const updateContainerPosition = () => {
+      if (visible) {
+        const buttonRect = buttonRef.current.getBoundingClientRect();
+        const containerRect = containerRef.current.getBoundingClientRect();
+        
+        let left, right, top;
+  
+        if (isLeft) {
+          left = Math.min(window.innerWidth - containerRect.width, buttonRect.left);
+          right = 'auto';
+        } else {
+          left = 'auto';
+          right = Math.min(window.innerWidth - containerRect.width, window.innerWidth - buttonRect.right);
+        }
+  
+        top = Math.max(0, buttonRect.top - containerRect.height);
+  
+        containerRef.current.style.left = `${left}px`;
+        containerRef.current.style.right = `${right}px`;
+        containerRef.current.style.top = `${top}px`;
+      }
+    };
+    if (isLeft) {
+      updateContainerPosition();
+      window.addEventListener('resize', updateContainerPosition);
+    }
     return () => {
       window.removeEventListener('resize', updateContainerPosition);
     };
-  }, [visible]);
+  }, [visible, isLeft]);
 
   return (
     <>
