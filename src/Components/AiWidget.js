@@ -89,6 +89,7 @@ const AiWidget = () => {
         <iframe id='your-app-iframe' 
           style={{ width: '600px', height: `${window.innerHeight * 0.5}px`, border: 'none' }}
           title="AI Widget"
+          allow="microphone"
         />
       </div>
       <button 
