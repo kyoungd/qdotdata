@@ -15,7 +15,7 @@ const Contact = () => {
                                 <div className="form-box">
                                     <h2>Let's talk?</h2>
                                     <p>
-                                        It's all about the humans behind a brand and those experiencing it, br we're right there. In the middle performance quick.
+                                        It's all about the humans behind a brand and those experiencing it.
                                     </p>
                                     <ContactForm />
                                 </div>

@@ -17,7 +17,7 @@ const Available = () => {
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
                             <div className="work-available">
-                                <h2 className="title">We <strong>are</strong> available to <br /> help your business grow.</h2>
+                                <h2 className="title">We are available to <br /> help your business grow.</h2>
                                 <Link className="btn btn-md circle btn-theme smooth-menu" to="contact">Hire us now</Link>
                             </div>
                         </div>

@@ -45,13 +45,6 @@ const AiWidget = () => {
   const containerRef = useRef();
 
   useEffect(() => {
-    const iframe = document.getElementById('your-app-iframe');
-    if (iframe) {
-      iframe.src = `${baseUrl}/ai/${aiName}/${templateName}`;
-    }
-  }, [baseUrl, aiName, templateName]);
-
-  useEffect(() => {
     const updateContainerPosition = () => {
       if (visible) {
         const buttonRect = buttonRef.current.getBoundingClientRect();
@@ -83,15 +76,24 @@ const AiWidget = () => {
     };
   }, [visible, isLeft]);
 
+  const iframe_src = `${baseUrl}/ai/${aiName}/${templateName}`;
+
   return (
     <>
-      <div style={containerStyle} ref={containerRef}>
-        <iframe id='your-app-iframe' 
-          style={{ width: '600px', height: `${window.innerHeight * 0.5}px`, border: 'none' }}
-          title="AI Widget"
-          allow="microphone"
-        />
-      </div>
+      { visible && (
+        <div style={containerStyle} ref={containerRef}>
+          <iframe id='your-app-iframe' 
+            style={{ 
+              width: '600px', 
+              height: `${window.innerHeight * 0.5}px`, 
+              border: 'none' 
+            }}
+            src={iframe_src}
+            title="AI Widget"
+            allow="microphone"
+          /> 
+        </div>
+      )}
       <button 
         style={buttonStyle} 
         onClick={toggleVisibility}
