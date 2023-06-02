@@ -5,6 +5,7 @@ import Banner from '../Components/Banner';
 import Services from '../Components/Services';
 import About from '../Components/About';
 import About2 from '../Components/About2'
+import About3 from '../Components/About3'
 import Available from '../Components/Available';
 import Blog from '../Components/Blog';
 import Contact from '../Components/Contact';
@@ -23,6 +24,7 @@ const Home = () => {
             <Banner />
             <Services />
             {/* <Portfolio /> */}
+            <About3 />
             <About />
             <About2 />
             {/* <Resume />
