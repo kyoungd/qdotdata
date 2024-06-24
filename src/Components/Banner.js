@@ -11,7 +11,7 @@ const Banner = () => {
 
     let textLines = [
         '<b class="is-visible">Qalm - micro task</b>',
-        '<b class="is-visible">M$ - closed loop payment</b>',
+        '<b class="is-visible">Tohi - stewards of earth</b>',
         '<b class="is-visible">QBanq - business as bank</b>',
         '<b class="is-visible">Angellink - transparancy in donation</b>',
         '<b class="is-visible">QLan - wireless mesh network</b>',
