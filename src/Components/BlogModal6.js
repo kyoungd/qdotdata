@@ -31,9 +31,9 @@ const BlogModal6 = () => {
                                     <p>
                                         Project has been completed and is slated for automated field production 2nd quarter 2020.
                                     </p>
-                                    <p>
+                                    {/* <p>
                                         For more information, please visit <a href="https://qh2oinc.godaddysites.com" target="_blank" rel="noreferrer" >www.qh2oinc.godaddysites.com </a>
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
 

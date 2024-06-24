@@ -27,9 +27,9 @@ const BlogModal3 = () => {
                                     <blockquote>
                                         Be your own bank. Business as a bank.
                                     </blockquote>
-                                    <p>
+                                    {/* <p>
                                         For more information, please see <a href="https://myqbanq.com" target="_blank" rel="noreferrer" >www.myqbanq.com.</a>
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
 

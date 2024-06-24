@@ -31,9 +31,9 @@ const BlogModal4 = () => {
                                     <p>
                                         Project is in final phase of completion and is looking for investors. For more on the great features of Angellink,
                                     </p>
-                                    <p>
+                                    {/* <p>
                                         For more on the great features of Angellink, please see <a href="https://angellinkorg" target="_blank" rel="noreferrer" >www.angellink.org</a>
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
 

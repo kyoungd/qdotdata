@@ -31,9 +31,9 @@ const BlogModal1 = () => {
                                     <p>
                                         Project has been completed and is being presented to investors by its principals.
                                     </p>
-                                    <p>
+                                    {/* <p>
                                         For more info, please review <a href="https://qalm.news" target="_blank" rel="noreferrer" >www.qalm.news.</a>
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
 

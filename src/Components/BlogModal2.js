@@ -31,9 +31,9 @@ const BlogModal2 = () => {
                                     <p>
                                         Instead of paying disposal fees and facing fines, our customers earn material fees, carbon credits, and rebates. With TOHI, everyone benefits—businesses, the environment, and the community. Join us in protecting America and promoting a profitable, sustainable model.
                                     </p>
-                                    <p>
+                                    {/* <p>
                                         For more info, please review <a href="https://tohienviro.com" target="_blank" rel="noreferrer" >www.tohienviro.com.</a>
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
 

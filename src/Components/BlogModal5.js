@@ -31,9 +31,9 @@ const BlogModal5 = () => {
                                     <p>
                                         Project has been completed and is in production.
                                     </p>
-                                    <p>
+                                    {/* <p>
                                         For more information, please go to <a href="https://qlaninc.com" target="_blank" rel="noreferrer" >www.qlaninc.com</a>
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
 
