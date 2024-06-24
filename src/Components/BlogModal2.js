@@ -20,19 +20,19 @@ const BlogModal2 = () => {
                                 </div>
                                 <div className="info">
                                     <p>
-                                        M$ is a Closed Loop SAAS platforms designed to remove the "old world" costs, inefficiencies and security failures of the current ACH and PCI platforms.
+                                        TOHI, translating to "Stewards of the Earth," highlights the critical need for better waste management in the U.S. Ignoring recycling revenue causes companies to miss out on approximately $30 billion annually and leads to unnecessary waste polluting our landfills.
                                     </p>
                                     <p>
-                                        M$ provides a "Ledger entry only" transaction between the issuing bank, its merchants and their customers. With this platform, there are no third party gateways, merchant login acccounts or accessible servers that can be hacked by outside parties.
+                                        We created a national database that connects waste creators, recyclers, and feedstock purchasers to optimize opportunities. This database includes locations, materials, capacities, regulations, and subsidies. We work with businesses to coordinate local recycling schedules, maximizing efficiency and capacity.
                                     </p>
                                     <blockquote>
-                                        The M$ platform is a closed loop system that you control entirely. It is a ledger entry only system that is not subject to any of the current ACH or PCI regulations.
+                                        TOHI, translating to "Stewards of the Earth," connects waste creators, recyclers, and feedstock purchasers through a national database, optimizing recycling efficiency and generating significant revenue while reducing landfill waste.
                                     </blockquote>
                                     <p>
-                                        M$ is therefore; safer, less expensive and entirely compliant with any HIPAA or other database restricted platforms.
+                                        Instead of paying disposal fees and facing fines, our customers earn material fees, carbon credits, and rebates. With TOHI, everyone benefits—businesses, the environment, and the community. Join us in protecting America and promoting a profitable, sustainable model.
                                     </p>
                                     <p>
-                                        For more info, please review <a href="https://numinoc.com" target="_blank" rel="noreferrer" >www.numinoc.com.</a>
+                                        For more info, please review <a href="https://tohienviro.com" target="_blank" rel="noreferrer" >www.tohienviro.com.</a>
                                     </p>
                                 </div>
                             </div>

@@ -32,7 +32,7 @@ const Contact = () => {
                                                 <div className="info">
                                                     <p>Our Email</p>
                                                     <h5>
-                                                        <a href="mailto:info@qdotdata.com">info@qdotdata.com</a>
+                                                        <a href="mailto:info@qdotdata.com">tim@qdotdata.com</a>
                                                     </h5>
                                                 </div>
                                             </li>
@@ -45,12 +45,12 @@ const Contact = () => {
                                                 <div className="info">
                                                     <p>Address</p>
                                                     <h5>
-                                                        101 Main Street <br /> Los Angeles, Calfornia
+                                                    1489 W Warm Springs Rd, #110 <br /> Las Vegas, Nevada. 89014
                                                     </h5>
                                                 </div>
                                             </li>
                                         </Fade>
-                                        <Fade bottom delay={600}>
+                                        {/* <Fade bottom delay={600}>
                                             <li className="contact-info-list ">
                                                 <div className="icon">
                                                     <i className="ri-customer-service-line"></i>
@@ -62,7 +62,7 @@ const Contact = () => {
                                                     </h5>
                                                 </div>
                                             </li>
-                                        </Fade>
+                                        </Fade> */}
                                     </ul>
                                 </div>
                             </div>

@@ -35,7 +35,7 @@ const BlogGallery = () => {
                             </div>
                             <div className="info">
                                 <h4>
-                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal2">M$ - Closed Loop Payment</Link>
+                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal2">TOHI - Steward of Earth</Link>
                                 </h4>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const BlogGallery = () => {
                             </div>
                             <div className="info">
                                 <h4>
-                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal3">QBANK - Business as a Bank Solution</Link>
+                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal3">QBANQ - Business as a Bank Solution</Link>
                                 </h4>
                             </div>
                         </div>

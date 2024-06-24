@@ -28,7 +28,7 @@ const Services = () => {
                             <div className="service-style-one-item">
                                 <BsCupHot size={70} style={{ padding: '10px' }} /> 
                                 <h4><Link to="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Consulting Service</Link></h4>
-                                <p>QData and M$ programs are designed to optimize business operations and services while providing environmental compliance, efficiency and return on investment. 
+                                <p>QData and Canum programs are designed to optimize business operations and services while providing environmental compliance, efficiency and return on investment. 
                                 </p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const Services = () => {
                             <div className="service-style-one-item">
                                 <BsTsunami size={70} style={{ padding: '10px' }} /> 
                                 <h4><Link to="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Our Workflow</Link></h4>
-                                <p>QData works with your IT and management staff, allowing hands-on development based on their skill sets. We provide experts to fill any skill gaps, and train your staff to understand your business better. Our solutions cover Business management, Phones, Servers, Database Management, call center services, Data services, manufacturing, marketing, and media. We manage all staff, contractors, agents, and partners. 
+                                <p> The true value in AI is in how it is applied and saracoti's Closed Loop AI can analyze every facet of your business to capitalize on where it provides value with increased ROI.
                                 </p>
                             </div>
                         </div>
