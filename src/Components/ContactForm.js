@@ -29,7 +29,7 @@ const ContactForm = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="form-group">
-              <input className="form-control" id="user_name" name="user_name" placeholder="Name*" type="text" required />
+              <input className="form-control" id="contact_name" name="contact_name" placeholder="Name*" type="text" required />
               <span className="alert-error"></span>
             </div>
           </div>
@@ -37,13 +37,13 @@ const ContactForm = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="form-group">
-              <input className="form-control" id="user_email" name="user_email" placeholder="Email*" type="email" required />
+              <input className="form-control" id="contact_email" name="contact_email" placeholder="Email*" type="email" required />
               <span className="alert-error"></span>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="form-group">
-              <input className="form-control" id="phone" name="phone" placeholder="Phone" type="number" />
+              <input className="form-control" id="contact_phone" name="contact_phone" placeholder="Phone" type="number" />
               <span className="alert-error"></span>
             </div>
           </div>
@@ -51,7 +51,7 @@ const ContactForm = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="form-group comments">
-              <textarea className="form-control" id="message" name="message" placeholder="Tell Us About Project *" type="text" required />
+              <textarea className="form-control" id="contact_description" name="contact_description" placeholder="Tell Us About Project *" type="text" required />
             </div>
           </div>
         </div>
