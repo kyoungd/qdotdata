@@ -20,7 +20,7 @@ const http_get = async (url) => {
 
 const http_post = async (url, body) => {
     try {
-        const response = await fetch(url, {
+        const response = await fetch(url, {8
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
