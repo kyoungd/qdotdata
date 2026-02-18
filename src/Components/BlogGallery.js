@@ -6,6 +6,7 @@ import blog3 from '../assets/img/blog/blog3.jpg';
 import blog4 from '../assets/img/blog/blog4.jpg';
 import blog5 from '../assets/img/blog/blog5.jpg';
 import blog6 from '../assets/img/blog/blog6.jpg';
+import blog7 from '../assets/img/blog/blog7.jpg';
 
 const BlogGallery = () => {
     return (
@@ -92,6 +93,20 @@ const BlogGallery = () => {
                             <div className="info">
                                 <h4>
                                     <Link to="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal6">QH2O - Industrial scale of water purification</Link>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Latest Blog 7 */}
+                    <div className="blog-style-one mb-30 col-lg-4 col-md-6">
+                        <div className="item">
+                            <div className="thumb">
+                                <Link to="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal7"><img src={blog7} alt="Thumb" /></Link>
+                            </div>
+                            <div className="info">
+                                <h4>
+                                    <Link to="#" data-bs-toggle="modal" data-bs-target="#blogSingleModal7">QFIN - Fin-Tech Consulting</Link>
                                 </h4>
                             </div>
                         </div>

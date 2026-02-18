@@ -6,6 +6,7 @@ import BlogModal3 from './BlogModal3';
 import BlogModal4 from './BlogModal4';
 import BlogModal5 from './BlogModal5';
 import BlogModal6 from './BlogModal6';
+import BlogModal7 from './BlogModal7';
 
 const Blog = () => {
     return (
@@ -29,6 +30,7 @@ const Blog = () => {
                 <BlogModal4 />
                 <BlogModal5 />
                 <BlogModal6 />
+                <BlogModal7 />
             </div>
         </>
     );
