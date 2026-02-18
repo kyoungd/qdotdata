@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import banner4 from '../assets/img/banner/4.jpg'
+import banner4 from '../assets/img/banner/modal-1.jpg'
 
 const BlogModal1 = () => {
 
